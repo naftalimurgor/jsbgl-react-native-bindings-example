@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "stream-browserify": "^3.0.0"
+  },
+  "dependencies": {
+    "@naftalimurgor/jsbgl-react-native": "^1.0.17"
+  }
+}

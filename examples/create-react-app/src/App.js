@@ -1,7 +1,19 @@
+import {useEffect} from 'react'
 import logo from './logo.svg';
 import './App.css';
+import {jsbgl} from '@naftalimurgor/jsbgl-react-native'
 
 function App() {
+  useEffect(() => {
+    initJsbglModule()
+
+    async function initJsbglModule() {
+      await jsbgl.asyncInit()
+      console.log(window);
+    }
+
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
